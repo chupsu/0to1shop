@@ -6,13 +6,12 @@ html {
 }
 body,
 h1, h2, h3, h4, h5, h6, p,
-ul[class], ol[class], li,
+ul, ol, li, dl, dd,
 figure, figcaption,
-blockquote, dl, dd {
+blockquote {
   margin: 0;
 }
-ul[class],
-ol[class] {
+ul, ol {
   padding: 0;
 }
 ul[class] {
@@ -30,4 +29,20 @@ button,
 textarea,
 select {
   font: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex-grow: 1;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
