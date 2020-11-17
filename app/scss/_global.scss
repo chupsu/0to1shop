@@ -38,6 +38,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  @extend %Rubik-400;
 }
 .main {
   flex-grow: 1;

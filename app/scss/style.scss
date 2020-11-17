@@ -93,4 +93,110 @@
 
 // Footer
 
+.footer {
+  font-size: 14px;
+  color: #7b7b7b;
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+  &__link {
+    @extend %Rubik-400;
+    line-height: 24px;
+    color: #7b7b7b;
+  }
+  &__link--adress,
+  &__link--phone,
+  &__link--mail {
+    display: block;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  &__link--adress {
+    max-width: 200px;
+  }
+  &__link--phone,
+  &__link--mail {
+    margin-top: 10px;
+  }
+}
+.footer-top {
+  display: flex;
+  padding: 75px 0 70px;
+  &__item {
+    flex-grow: 1;
+    max-width: 300px;
+    &:last-child {
+      max-width: 270px;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    @extend %DMSans-700;
+    line-height: 21px;
+    font-size: 16px;
+    color: #1f2044;
+    padding-top: 17px;
+    margin-bottom: 18px;
+  }
+  &__text {
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  &__list-item + &__list-item {
+    margin-top: 8px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-input {
+    width: 170px;
+    height: 38px;
+    font-size: 12px;
+    color: #234969;
+    border: none;
+    background-color: #fef7f0;
+    padding: 5px 15px;
+    &::placeholder {
+      color: #234969;
+    }
+  }
+  &__form-btn {
+    width: 100px;
+    height: 38px;
+    color: #fff;
+    border: none;
+    background-color: #a3bbc8;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dae4e9;
+  padding: 33px 0;
+}
+.footer-menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    padding: 0 15px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    .footer__link {
+      line-height: 16px;
+    }
+  }
+  &__list-item + &__list-item {
+    border-left: 1px solid #7b7b7b;
+  }
+}
+
 @import 'media';
