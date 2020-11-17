@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   @extend %Rubik-400;
+  font-size: 16px;
 }
 .main {
   flex-grow: 1;
