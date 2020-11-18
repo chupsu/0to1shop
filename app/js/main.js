@@ -2,12 +2,10 @@ $(function () {
   $('.slider__wrapper').slick({
      arrows: false,
      dots: true,
-     adaptiveHeight: true,
-     slidesToShow: 1,
-     slidesToScroll: 1,
      infinite: true,
-     speed: 500,
-     easing: 'ease',
-     fade: true
+     fade: true,
+     autoplay: true,
+     autoplaySpeed: 2000
   });
 });
+let mixer = mixitup('.week-product, .new-product');
