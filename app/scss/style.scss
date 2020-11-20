@@ -160,15 +160,21 @@
     margin-bottom: 35px;
   }
   &__box-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 200px;
     height: 60px;
     @extend %Rubik-500;
+    line-height: 12px;
     font-size: 15px;
     color: #fff;
     background-color: #a3bbc8;
-    padding: 22px 27px;
+    padding: 22px 18px 22px 27px;
     transition: all .5s;
+    &--arrow {
+      font-size: 24px;
+    }
     &:hover {
       background-color: #7392a3;
     }
@@ -346,15 +352,22 @@
     object-position: bottom left;
   }
   &__btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 180px;
     height: 60px;
     @extend %Rubik-500;
+    line-height: 12px;
+    font-size: 15px;
     color: #436372;
     border-radius: 5px;
     border: 1px solid #b4c1c7;
     padding: 20px;
     transition: all .5s;
+    &--arrow {
+      font-size: 24px;
+    }
     &:hover {
       color: #fff;
       background-color: #a3bbc8;
@@ -375,6 +388,7 @@
   }
   &__item {
     @extend %DMSans-700;
+    border-radius: 5px;
     background-color: #f8f8f8;
     padding: 33px 40px;
   }
@@ -420,6 +434,14 @@
     justify-content: space-between;
     margin-bottom: 292px;
   }
+  &__all-post {
+    @extend %DMSans-700;
+    color: #262626;
+    &::after {
+      content: url(../images/icon/all-post.svg);
+      padding-left: 17px;
+    }
+  }
   &__bottom {
     background-color: #fef7f0;
   }
@@ -435,15 +457,12 @@
   }
   &__post-inner {
     display: flex;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: space-between;
     padding: 0 15px;
   }
   &__post {
     display: flex;
     flex-direction: column;
-    flex: 1 1 33.333%;
+    flex: 0 1 33.333%;
     border-radius: 5px;
     overflow: hidden;
     &:not(:last-child) {
@@ -457,6 +476,9 @@
     object-position: center;
   }
   &__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     position: relative;
     background-color: #fff;
     padding: 33px 30px 30px;
@@ -484,6 +506,7 @@
     padding: 5px 0;
   }
   &__text {
+    flex-grow: 1;
     max-width: 290px;
     @extend %DMSans-500;
     line-height: 22px;
