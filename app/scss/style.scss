@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'fonts';
+@import 'libs';
 @import 'global';
 
 // Header
@@ -390,7 +391,7 @@
     @extend %DMSans-700;
     border-radius: 5px;
     background-color: #f8f8f8;
-    padding: 33px 40px;
+    padding: 30px 35px;
   }
   &__title {
     max-width: 175px;
@@ -443,21 +444,19 @@
     }
   }
   &__bottom {
+    min-height: 435px;
     background-color: #fef7f0;
   }
   &__bottom-wrapper {
-    min-height: 435px;
-    position: relative;
-    padding: 267px 15px 78px;
+    transform: translateY(-250px);
+  }
+  &__bottom-inner {
+    display: flex;
+    flex-direction: column;
   }
   &__post-wrapper {
-    position: absolute;
-    top: -250px;
-    left: 0;
-  }
-  &__post-inner {
     display: flex;
-    padding: 0 15px;
+    margin-bottom: 90px;
   }
   &__post {
     display: flex;
@@ -527,12 +526,17 @@
   }
 }
 .partners {
+  margin-bottom: -160px;
+  &__list {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
   &__logo {
     max-height: 80px;
-    object-fit: content;
     object-position: center;
   }
 }

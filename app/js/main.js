@@ -5,7 +5,16 @@ $(function () {
      infinite: true,
      fade: true,
      autoplay: true,
-     autoplaySpeed: 2000
+     autoplaySpeed: 200
   });
 });
-let mixer = mixitup('.week-product, .new-product');
+let mixer1 = mixitup('.week-product__items', {
+  selectors: {
+    control: '.week__filter-btn'
+  }
+});
+let mixer2 = mixitup('.new-product__items', {
+  selectors: {
+    control: '.new__filter-btn'
+  }
+});

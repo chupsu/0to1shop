@@ -170,11 +170,11 @@
           Products of the week
         </h2>
         <div class="tabs">
-          <button class="tabs__item" data-filter='all'>All</button>
-          <button class="tabs__item" data-filter='.category-a'>Furnitures</button>
-          <button class="tabs__item" data-filter='.category-b'>Chairs</button>
-          <button class="tabs__item" data-filter='.category-c'>Lighting</button>
-          <button class="tabs__item" data-filter='.category-d'>Decor</button>
+          <button class="tabs__item week__filter-btn" data-filter='all'>All</button>
+          <button class="tabs__item week__filter-btn" data-filter='.category-a'>Furnitures</button>
+          <button class="tabs__item week__filter-btn" data-filter='.category-b'>Chairs</button>
+          <button class="tabs__item week__filter-btn" data-filter='.category-c'>Lighting</button>
+          <button class="tabs__item week__filter-btn" data-filter='.category-d'>Decor</button>
         </div>
         <div class="week-product__items">
           <div class="week-product__item mix category-b">
@@ -412,11 +412,11 @@
           New Design
         </h2>
         <div class="tabs">
-          <button class="tabs__item" data-filter='all'>All</button>
-          <button class="tabs__item" data-filter='.category-a'>Furnitures</button>
-          <button class="tabs__item" data-filter='.category-b'>Chairs</button>
-          <button class="tabs__item" data-filter='.category-c'>Lighting</button>
-          <button class="tabs__item" data-filter='.category-d'>Decor</button>
+          <button class="tabs__item new__filter-btn" data-filter='all'>All</button>
+          <button class="tabs__item new__filter-btn" data-filter='.category-a'>Furnitures</button>
+          <button class="tabs__item new__filter-btn" data-filter='.category-b'>Chairs</button>
+          <button class="tabs__item new__filter-btn" data-filter='.category-c'>Lighting</button>
+          <button class="tabs__item new__filter-btn" data-filter='.category-d'>Decor</button>
         </div>
         <div class="new-product__items">
           <a class="new-product__item mix category-b" href="#" style="background: url(images/product/new-1.jpg) bottom right / contain no-repeat;">
@@ -446,7 +446,7 @@
         </div>
       </div>
       <div class="new-product__video" style="background: url(images/product/new_video-bg.jpg) center / cover no-repeat;">
-        <a class="new-product__video-player" href="#">
+        <a class="new-product__video-player" data-fancybox href="https://youtu.be/gC8ec_y6ewg">
           <svg class="new-product__video-play" width="127px" height="127px">
             <path fill-rule="evenodd"  opacity="0.4" fill="rgb(163, 187, 200)"
             d="M63.500,-0.000 C98.570,-0.000 127.000,28.430 127.000,63.500 C127.000,98.570 98.570,127.000 63.500,127.000 C28.430,127.000 -0.000,98.570 -0.000,63.500 C-0.000,28.430 28.430,-0.000 63.500,-0.000 Z"/>
@@ -469,76 +469,89 @@
           </a>
         </div>
       </div>
-      <cite></cite>
       <div class="blog__bottom">
-        <div class="container blog__bottom-wrapper">
-          <div class="blog__post-wrapper">
-            <div class="blog__post-inner">
-              <a class="blog__post" href="#">
-                <img class="blog__img" src="images/blog/blog_img-1.jpg" alt="Фото новости">
-                <div class="blog__content">
-                  <p class="blog__status">
-                    News
-                  </p>
-                  <p class="blog__text">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </p>
-                  <div class="blog__info">
-                    <p class="blog__date">
-                      28 january, 2020
+        <div class="blog__bottom-wrapper">
+          <div class="container">
+            <div class="blog__bottom-inner">
+              <div class="blog__post-wrapper">
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-1.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
                     </p>
-                    <p class="blog__author">
-                      By admin
+                    <p class="blog__text">
+                      Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a class="blog__post" href="#">
-                <img class="blog__img" src="images/blog/blog_img-2.jpg" alt="Фото новости">
-                <div class="blog__content">
-                  <p class="blog__status">
-                    News
-                  </p>
-                  <p class="blog__text">
-                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                  </p>
-                  <div class="blog__info">
-                    <p class="blog__date">
-                      28 january, 2020
+                </a>
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-2.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
                     </p>
-                    <p class="blog__author">
-                      By admin
+                    <p class="blog__text">
+                      Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                     </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a class="blog__post" href="#">
-                <img class="blog__img" src="images/blog/blog_img-3.jpg" alt="Фото новости">
-                <div class="blog__content">
-                  <p class="blog__status">
-                    News
-                  </p>
-                  <p class="blog__text">
-                    Rncididunt ut labore et dolore magna aliqua. Ut enim 
-                  </p>
-                  <div class="blog__info">
-                    <p class="blog__date">
-                      28 january, 2020
+                </a>
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-3.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
                     </p>
-                    <p class="blog__author">
-                      By admin
+                    <p class="blog__text">
+                      Rncididunt ut labore et dolore magna aliqua. Ut enim 
                     </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="partners">
+                <ul class="partners__list">
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-1.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-2.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-3.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-4.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-5.png" alt="Логотип партнера">
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="partners">
-            <img class="partners__logo" src="images/partners/logo-1.png" alt="Логотип партнера">
-            <img class="partners__logo" src="images/partners/logo-2.png" alt="Логотип партнера">
-            <img class="partners__logo" src="images/partners/logo-3.png" alt="Логотип партнера">
-            <img class="partners__logo" src="images/partners/logo-4.png" alt="Логотип партнера">
-            <img class="partners__logo" src="images/partners/logo-5.png" alt="Логотип партнера">
           </div>
         </div>
       </div>
