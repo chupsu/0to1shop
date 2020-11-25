@@ -5,7 +5,7 @@ $(function () {
      infinite: true,
      fade: true,
      autoplay: true,
-     autoplaySpeed: 200
+     autoplaySpeed: 2000
   });
 });
 let mixer1 = mixitup('.week-product__items', {

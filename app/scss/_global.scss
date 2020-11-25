@@ -80,3 +80,24 @@ body {
 .mixitup-control-active {
   color: #191919;
 }
+.page {
+  &__info {
+    background-color: #edf1f4;
+    padding: 27px 0 31px;
+  }
+  &__title,
+  &__navigation {
+    text-align: center;
+  }
+  &__title {
+    @extend %Rubik-300;
+    font-size: 36px;
+    color: #222933;
+    margin-bottom: 4px;
+  }
+  &__navigation-link {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: rgba(34, 41, 51, 0.6);
+  }
+}
