@@ -11,11 +11,11 @@ figure, figcaption,
 blockquote {
   margin: 0;
 }
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
-ul[class] {
+ul {
   list-style: none;
 }
 a {
@@ -48,16 +48,17 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
-.container--large {
-  max-width: 1800px;
-  padding: 0 15px;
-  margin: 0 auto;
+  &--large {
+    max-width: 1800px;
+  }
 }
 .title {
   @extend %DMSans-700;
   font-size: 36px;
-  color: #191919;
+  color: #243f4d;
+  &--dark {
+    color: #191919;
+  }
 }
 .product-title {
   text-align: center;
@@ -82,12 +83,9 @@ body {
 }
 .page {
   &__info {
+    text-align: center;
     background-color: #edf1f4;
     padding: 27px 0 31px;
-  }
-  &__title,
-  &__navigation {
-    text-align: center;
   }
   &__title {
     @extend %Rubik-300;
@@ -95,9 +93,29 @@ body {
     color: #222933;
     margin-bottom: 4px;
   }
-  &__navigation-link {
+}
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    color: rgba(34, 41, 51, 0.6);
+    &::after {
+      content: '/';
+      color: inherit;
+      padding: 0 5px;
+    }
+    &:last-child {
+      color: $accent;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
     @extend %Rubik-400;
     font-size: 14px;
-    color: rgba(34, 41, 51, 0.6);
+    color: inherit;
   }
 }
