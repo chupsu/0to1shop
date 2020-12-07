@@ -119,3 +119,34 @@ body {
     color: inherit;
   }
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  &__list {
+    display: flex;
+  }
+  &__link,
+  &__arrows {
+    height: 50px;
+    line-height: 48px;
+    color: #243f4d;
+    border: 1px solid $secondary;
+  }
+  &__link {
+    display: block;
+    width: 50px;
+    &--active {
+      color: #fff;
+      background-color: $secondary;
+    }
+  }
+  &__arrows {
+    width: 72px;
+  }
+  &__item + &__item,
+  &__list,
+  &__arrows--next {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container container--large">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="shop.html">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="terms.html">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__link--search" href="#">
+            <img class="user-nav__link-img" src="images/icon/search.svg" alt="Поиск">
+          </a>
+          <div class="user-nav__link user-nav__link--purchases">
+            <a class="user-nav__link--favorites" href="#">
+              <img class="user-nav__link-img" src="images/icon/favorite.svg" alt="Сохранённое">
+              <span class="user-nav__num user-nav__num--favorites">0</span>
+            </a>
+            <a class="user-nav__link--cart" href="#">
+              <img class="user-nav__link-img" src="images/icon/cart.svg" alt="Корзина">
+              <span class="user-nav__num user-nav__num--cart">0</span>
+            </a>
+          </div>
+          <a class="user-nav__link user-nav__link--menu" href="#">
+            <img class="user-nav__link-img" src="images/icon/user-menu.svg" alt="Подменю">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="page__info">
+      <h2 class="page__title">
+        Product list 1
+      </h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Product list 1</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__wrapper">
+          <div class="catalog__filters filter">
+            <div class="filter__item">
+              <h3 class="filter__title">
+                Category
+              </h3>
+              <form class="filter__form" action="#">
+                <label class="filter__label filter__label--category">
+                  <input class="filter__input" type="checkbox">
+                  <span class="filter__checkbox filter__checkbox--category">Chair</span>
+                </label>
+                <label class="filter__label filter__label--category">
+                  <input class="filter__input" type="checkbox">
+                  <span class="filter__checkbox filter__checkbox--category">Table</span>
+                </label>
+                <label class="filter__label filter__label--category">
+                  <input class="filter__input" type="checkbox">
+                  <span class="filter__checkbox filter__checkbox--category">Lamp</span>
+                </label>
+                <label class="filter__label filter__label--category">
+                  <input class="filter__input" type="checkbox">
+                  <span class="filter__checkbox filter__checkbox--category">Watch</span>
+                </label>
+                <label class="filter__label filter__label--category">
+                  <input class="filter__input" type="checkbox">
+                  <span class="filter__checkbox filter__checkbox--category">Clock</span>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item">
+              <h3 class="filter__title">
+                Price
+              </h3>
+              <form class="filter__form" action="#">
+                <input class="filter__range" type="text" data-min="0", data-max="1000", data-from="100", data-to="500">
+                <div class="filter__range-num">
+                  <span class="filter__range-from"></span>
+                  <span class="filter__range-to"></span>
+                </div>
+              </form>
+            </div>
+            <div class="filter__item">
+              <h3 class="filter__title">
+                Brand
+              </h3>
+              <form class="filter__form" action="#">
+                <label class="filter__label">
+                  <input class="filter__input" type="checkbox">
+                  <div class="filter__checkbox">
+                    <span class="filter-brand__name">RFL</span>
+                    <span class="filter-brand__num">(10)</span>
+                  </div>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__input" type="checkbox">
+                  <div class="filter__checkbox">
+                    <span class="filter-brand__name">Brothers</span>
+                    <span class="filter-brand__num">(21)</span>
+                  </div>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__input" type="checkbox">
+                  <div class="filter__checkbox">
+                    <span class="filter-brand__name">Regal</span>
+                    <span class="filter-brand__num">(3)</span>
+                  </div>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__input" type="checkbox">
+                  <div class="filter__checkbox">
+                    <span class="filter-brand__name">Nadia</span>
+                    <span class="filter-brand__num">(14)</span>
+                  </div>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__input" type="checkbox">
+                  <div class="filter__checkbox">
+                    <span class="filter-brand__name">Otobi</span>
+                    <span class="filter-brand__num">(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter__item">
+              <h3 class="filter__title">
+                Recent products
+              </h3>
+              <a class="recent__item" href="#">
+                <img class="recent__img" src="images/product/recent-1.png" alt="Фото товара">
+                <div class="recent__content">
+                  <h5 class="recent__title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <p class="recent__price">23$</p>
+                </div>
+              </a>
+              <a class="recent__item" href="#">
+                <img class="recent__img" src="images/product/recent-2.png" alt="Фото товара">
+                <div class="recent__content">
+                  <h5 class="recent__title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="3.5"></div>
+                  <p class="recent__price">23$</p>
+                </div>
+              </a>
+              <a class="recent__item" href="#">
+                <img class="recent__img" src="images/product/recent-3.png" alt="Фото товара">
+                <div class="recent__content">
+                  <h5 class="recent__title">Pendant lamp</h5>
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <p class="recent__price">23$</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="catalog__content">
+            <div class="catalog__content-filters filter">
+              <div class="filter__view">
+                <span>View</span>
+                <button class="filter__view-btn filter__view-btn--active">
+                  <svg width="15px" height="15px">
+                    <path fill-rule="evenodd"
+                      d="M-0.000,3.750 L3.750,3.750 L3.750,-0.000 L-0.000,-0.000 L-0.000,3.750 ZM5.625,15.000 L9.375,15.000 L9.375,11.250 L5.625,11.250 L5.625,15.000 ZM-0.000,15.000 L3.750,15.000 L3.750,11.250 L-0.000,11.250 L-0.000,15.000 ZM-0.000,9.375 L3.750,9.375 L3.750,5.625 L-0.000,5.625 L-0.000,9.375 ZM5.625,9.375 L9.375,9.375 L9.375,5.625 L5.625,5.625 L5.625,9.375 ZM11.250,-0.000 L11.250,3.750 L15.000,3.750 L15.000,-0.000 L11.250,-0.000 ZM5.625,3.750 L9.375,3.750 L9.375,-0.000 L5.625,-0.000 L5.625,3.750 ZM11.250,9.375 L15.000,9.375 L15.000,5.625 L11.250,5.625 L11.250,9.375 ZM11.250,15.000 L15.000,15.000 L15.000,11.250 L11.250,11.250 L11.250,15.000 Z"/>
+                  </svg>
+                </button>
+                <button class="filter__view-btn">
+                  <svg width="20px" height="15px">
+                    <path fill-rule="evenodd"
+                      d="M5.835,14.998 L5.835,10.827 L19.994,10.827 L19.994,14.998 L5.835,14.998 ZM5.835,5.413 L19.994,5.413 L19.994,9.585 L5.835,9.585 L5.835,5.413 ZM5.835,0.000 L19.994,0.000 L19.994,4.172 L5.835,4.172 L5.835,0.000 ZM0.007,10.827 L4.429,10.827 L4.429,14.998 L0.007,14.998 L0.007,10.827 ZM0.007,5.413 L4.429,5.413 L4.429,9.585 L0.007,9.585 L0.007,5.413 ZM0.007,0.000 L4.429,0.000 L4.429,4.172 L0.007,4.172 L0.007,0.000 Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="filter__quantity">
+                <select class="filter__quantity-type filter__quantity-style">
+                  <option value="">Sort By Default</option>
+                  <option value="">Sort By Price</option>
+                  <option value="">Sort By Name</option>
+                  <option value="">Sort By Type</option>
+                </select>
+                <select class="filter__quantity-name filter__quantity-style">
+                  <option value="">Show 9</option>
+                  <option value="">Show 15</option>
+                  <option value="">Show 21</option>
+                  <option value="">Show 27</option>
+                </select>
+              </div>
+            </div>
+            <div class="product__items product__items--catalog">
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-1.png" alt="Фото товара">
+                <h4 class="product__title">Wooden radio</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-2.png" alt="Фото товара">
+                <h4 class="product__title">Wooden chair</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-3.png" alt="Фото товара">
+                <h4 class="product__title">White chair</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-4.png" alt="Фото товара">
+                <h4 class="product__title">Retro table</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-5.png" alt="Фото товара">
+                <h4 class="product__title">Wooden radio</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-6.png" alt="Фото товара">
+                <h4 class="product__title">Wooden chair</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-7.png" alt="Фото товара">
+                <h4 class="product__title">White chair</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-8.png" alt="Фото товара">
+                <h4 class="product__title">Retro table</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-9.png" alt="Фото товара">
+                <h4 class="product__title">Retro table</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-10.png" alt="Фото товара">
+                <h4 class="product__title">Retro table</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+              <div class="product__item">
+                <div class="product__popup">
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                  <a class="product__link" href="#"></a>
+                </div>
+                <img class="product__img" src="images/product/product-11.png" alt="Фото товара">
+                <h4 class="product__title">Retro table</h4>
+                <p class="product__price">$29.00</p>
+              </div>
+            </div>
+            <div class="pagination">
+              <a class="pagination__arrows pagination__arrows--prev" href="#">Prev</a>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <span class="pagination__link">...</span>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">10</a>
+                </li>
+              </ul>
+              <a class="pagination__arrows pagination__arrows--next" href="#">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__bottom">
+      <div class="container">
+        <div class="partners">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img class="partners__logo" src="images/partners/logo-1.png" alt="Логотип партнера">
+            </li>
+            <li class="partners__item">
+              <img class="partners__logo" src="images/partners/logo-2.png" alt="Логотип партнера">
+            </li>
+            <li class="partners__item">
+              <img class="partners__logo" src="images/partners/logo-3.png" alt="Логотип партнера">
+            </li>
+            <li class="partners__item">
+              <img class="partners__logo" src="images/partners/logo-4.png" alt="Логотип партнера">
+            </li>
+            <li class="partners__item">
+              <img class="partners__logo" src="images/partners/logo-5.png" alt="Логотип партнера">
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <adress class="footer-top__item">
+          <a class="logo footer__logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип">
+          </a>
+          <a class="footer__link footer__link--adress" href="#">
+            <span>Address:</span> 4772 Wines Lane Houston, TX 77032
+          </a>
+          <a class="footer__link footer__link--phone" href="tel:+8323475843">
+            <span>Telephone:</span> +832-347-5843
+          </a>
+          <a class="footer__link footer__link--mail" href="mailto:contact@Glee.com">
+            <span>Email:</span> contact@Glee.com
+          </a>
+        </adress>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Services
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="about.html">About us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="terms.html">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="login.html">Login</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer__copyright">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+        <nav class="footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="index.html">Home</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="about.html">About</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="blog.html">Blog</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
