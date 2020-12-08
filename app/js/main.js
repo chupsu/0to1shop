@@ -21,8 +21,16 @@ $(function () {
     },
   });
   // Star Rate
-  $('.star').rateYo({
+  $('.recent__star').rateYo({
     starWidth: '11px',
+    // 7px
+    normalFill: '#d6d6d6',
+    ratedFill: '#ffcc00',
+    readOnly: true
+  });
+  $('.product__star').rateYo({
+    starWidth: '16px',
+    // 11px
     normalFill: '#d6d6d6',
     ratedFill: '#ffcc00',
     readOnly: true
@@ -32,11 +40,19 @@ $(function () {
     $('.filter__view-btn').removeClass('filter__view-btn--active');
     $(this).addClass('filter__view-btn--active');
   });
-  $('.btn-list').on('click', function(){
-    $('.product__item').addClass('.--list');
+  $('.filter__view-btn--list').on('click', function(){
+    $('.product__item').addClass('product__item--list');
+    $('.product__items--catalog').css({
+      'grid-auto-rows' : '500px',
+      'grid-template-columns' : '1fr'
+    });
   })
-  $('.btn-grid').on('click', function(){
-    $('.product__item').removeClass('.--list');
+  $('.filter__view-btn--grid').on('click', function(){
+    $('.product__item').removeClass('product__item--list');
+    $('.product__items--catalog').css({
+      'grid-auto-rows' : '380px',
+      'grid-template-columns' : 'repeat(3, 1fr)'
+    });
   })
   // Style Select
   $('.filter__quantity-style').styler();
