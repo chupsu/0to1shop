@@ -97,13 +97,13 @@
 .slick-list {
   overflow: hidden;
 }
-.slick-track,
-.slick-dots {
+.offer-slider .slick-list .slick-track {
   display: flex;
-  align-items: center;
 }
 .slick-dots {
   position: absolute;
+  display: flex;
+  align-items: center;
   left: 50%;
   bottom: 44px;
   z-index: 1100;
@@ -127,10 +127,8 @@
     margin-left: 11px;
   }
 }
-.slider {
-  &__wrapper {
-    position: relative;
-  }
+.offer-slider {
+  position: relative;
   &__item {
     outline: none;
   }
@@ -674,6 +672,7 @@
 
 @import 'about-page';
 @import 'catalog';
+@import 'product';
 @import 'terms';
 @import 'auth';
 

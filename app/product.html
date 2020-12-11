@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container container--large">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="index.html">Home +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="shop.html">Services</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="terms.html">Pages +</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">News</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__link--search" href="#">
+            <img class="user-nav__link-img" src="images/icon/search.svg" alt="Поиск">
+          </a>
+          <div class="user-nav__link user-nav__link--purchases">
+            <a class="user-nav__link--favorites" href="#">
+              <img class="user-nav__link-img" src="images/icon/favorite.svg" alt="Сохранённое">
+              <span class="user-nav__num user-nav__num--favorites">0</span>
+            </a>
+            <a class="user-nav__link--cart" href="#">
+              <img class="user-nav__link-img" src="images/icon/cart.svg" alt="Корзина">
+              <span class="user-nav__num user-nav__num--cart">0</span>
+            </a>
+          </div>
+          <a class="user-nav__link user-nav__link--menu" href="#">
+            <img class="user-nav__link-img" src="images/icon/user-menu.svg" alt="Подменю">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="page__info">
+      <h2 class="page__title">
+        Product Details
+      </h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Product Details</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="product-details">
+      <div class="container">
+        <div class="product-details__wrapper">
+          <div class="product-details__inner">
+            <div class="product-details__slider">
+              <div class="product-details__slider--thumb">
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--thumb" src="images/product/product_item-1.jpg" alt="Фото товара">
+                </div>
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--thumb" src="images/product/product_item-2.jpg" alt="Фото товара">
+                </div>
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--thumb" src="images/product/product_item-3.jpg" alt="Фото товара">
+                </div>
+              </div>
+              <div class="product-details__slider--big">
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--big" src="images/product/product_item-1.jpg" alt="Фото товара">
+                </div>
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--big" src="images/product/product_item-2.jpg" alt="Фото товара">
+                </div>
+                <div class="product-details__slider-item">
+                  <img class="product-details__slider-img product-details__slider-img--big" src="images/product/product_item-3.jpg" alt="Фото товара">
+                </div>
+              </div>
+            </div>
+            <div class="product-details__content">
+              <h4 class="product-details__title">Pendant lamp</h4>
+              <div class="product-details__star" data-rateyo-rating="4"></div>
+              <p class="product-details__price">29$</p>
+              <p class="product-details__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+              </p>
+              <form class="product-details__form">
+                <input class="product-details__num" type="number" value="1" min="1">
+                <button class="product-details__btn" type="submit">Add to cart</button>
+              </form>
+              <ul class="product-details__info">
+                <li class="product-details__info-item">
+                  <span class="product-details__info-title">SKU:</span>
+                  <span class="product-details__info-text">014</span>
+                </li>
+                <li class="product-details__info-item">
+                  <span class="product-details__info-title">Category:</span>
+                  <a class="product-details__info-link" href="#">Lights</a>
+                </li>
+                <li class="product-details__info-item">
+                  <span class="product-details__info-title">Tag:</span>
+                  <a class="product-details__info-link" href="#">Decorative</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="product-details__more">
+            <div class="product-details__more-tabs">
+              <a class="product-details__more-tab" href="#tab-1">Description</a>
+              <a class="product-details__more-tab" href="#tab-2">Additional information</a>
+              <a class="product-details__more-tab product-details__more-tab--active" href="#tab-3">Reviews (2)</a>
+            </div>
+            <div class="product-details__more-content">
+              <div class="product-details__more-item" id="tab-1">
+                <p class="product-details__more-text">
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="product-details__more-item" id="tab-2">2222222222222222222</div>
+              <div class="product-details__more-item product-details__more-item--active" id="tab-3">
+                <div class="reviews">
+                  <div class="reviews__item">
+                    <img class="reviews__img" src="images/avatar/1.jpg" alt="Аватар">
+                    <div class="reviews__content">
+                      <div class="reviews__top">
+                        <span class="reviews__name">Michle Jhon</span>
+                        <span class="reviews__date">9 days ago</span>
+                        <div class="reviews__star" data-rateyo-rating="5"></div>
+                      </div>
+                      <p class="reviews__text">
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                      <a class="reviews__reply-link" href="#">Reply</a>
+                    </div>
+                  </div>
+                  <div class="reviews__item">
+                    <img class="reviews__img" src="images/avatar/2.jpg" alt="Аватар">
+                    <div class="reviews__content">
+                      <div class="reviews__top">
+                        <span class="reviews__name">Michle Jhon</span>
+                        <span class="reviews__date">12 days ago</span>
+                        <div class="reviews__star" data-rateyo-rating="3"></div>
+                      </div>
+                      <p class="reviews__text">
+                        Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet.
+                      </p>
+                      <a class="reviews__reply-link" href="#">Reply</a>
+                    </div>
+                  </div>
+                  <form class="reviews__form">
+                    <p class="reviews__form-title">Add your review</p>
+                    <div class="reviews__form-rate">
+                      <span class="reviews__form-vote">Your Rating</span>
+                      <label class="reviews__form-stars">
+                        <input class="reviews__form-radio" type="radio" name="star">
+                        <span class="reviews__form-star">
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                        </span>
+                      </label>
+                      <label class="reviews__form-stars">
+                        <input class="reviews__form-radio" type="radio" name="star">
+                        <span class="reviews__form-star">
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                        </span>
+                      </label>
+                      <label class="reviews__form-stars">
+                        <input class="reviews__form-radio" type="radio" name="star">
+                        <span class="reviews__form-star">
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                        </span>
+                      </label>
+                      <label class="reviews__form-stars">
+                        <input class="reviews__form-radio" type="radio" name="star">
+                        <span class="reviews__form-star">
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                        </span>
+                      </label>
+                      <label class="reviews__form-stars">
+                        <input class="reviews__form-radio" type="radio" name="star">
+                        <span class="reviews__form-star">
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                          <svg viewBox="0 12.705 512 486.59">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="reviews__form-contacts">
+                      <label class="reviews__form-label">
+                        <input class="reviews__form-name" type="text" placeholder="Your name" required>
+                      </label>
+                      <label class="reviews__form-label">
+                        <input class="reviews__form-name" type="text" placeholder="E-mail address" required>
+                      </label>
+                    </div>
+                    <textarea class="reviews__form-textarea" placeholder="Your text here" required></textarea>
+                    <button class="reviews__form-btn" type="submit">Leave Review</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__top">
+          <h2 class="title">
+            Our Insights & Articles
+          </h2>
+          <a class="blog__all-post" href="#">
+            View All
+          </a>
+        </div>
+      </div>
+      <div class="blog__bottom">
+        <div class="blog__bottom-wrapper">
+          <div class="container">
+            <div class="blog__bottom-inner">
+              <div class="blog__post-wrapper">
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-1.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
+                    </p>
+                    <p class="blog__text">
+                      Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-2.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
+                    </p>
+                    <p class="blog__text">
+                      Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="blog__post" href="#">
+                  <img class="blog__img" src="images/blog/blog_img-3.jpg" alt="Фото новости">
+                  <div class="blog__content">
+                    <p class="blog__status">
+                      News
+                    </p>
+                    <p class="blog__text">
+                      Rncididunt ut labore et dolore magna aliqua. Ut enim 
+                    </p>
+                    <div class="blog__info">
+                      <p class="blog__date">
+                        28 january, 2020
+                      </p>
+                      <p class="blog__author">
+                        By admin
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="partners partners--heightfix">
+                <ul class="partners__list">
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-1.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-2.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-3.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-4.png" alt="Логотип партнера">
+                  </li>
+                  <li class="partners__item">
+                    <img class="partners__logo" src="images/partners/logo-5.png" alt="Логотип партнера">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <adress class="footer-top__item">
+          <a class="logo footer__logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип">
+          </a>
+          <a class="footer__link footer__link--adress" href="#">
+            <span>Address:</span> 4772 Wines Lane Houston, TX 77032
+          </a>
+          <a class="footer__link footer__link--phone" href="tel:+8323475843">
+            <span>Telephone:</span> +832-347-5843
+          </a>
+          <a class="footer__link footer__link--mail" href="mailto:contact@Glee.com">
+            <span>Email:</span> contact@Glee.com
+          </a>
+        </adress>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Services
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="about.html">About us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Return Policy</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Our Blog</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="terms.html">Terms & Condition</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="login.html">Login</a>
+            </li>
+            <li class="footer-top__list-item">
+              <a class="footer__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__title">
+            Newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer__copyright">
+          ©2020 CopyRight Example. All rights reserved.
+        </p>
+        <nav class="footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="index.html">Home</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="about.html">About</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="blog.html">Blog</a>
+            </li>
+            <li class="footer-menu__list-item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+  <!-- <script src="../node_modules/ion-rangeslider/js/ion.rangeSlider.js"></script> -->
+</body>
+</html>

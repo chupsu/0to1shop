@@ -37,7 +37,8 @@ $secondary: #a3bbc8;
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
 }
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
