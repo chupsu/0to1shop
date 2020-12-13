@@ -1,12 +1,12 @@
 $(function () {
   // Slider
   $('.offer-slider').slick({
-     arrows: false,
-     dots: true,
-     infinite: true,
-     fade: true,
-     autoplay: true,
-     autoplaySpeed: 2000
+    arrows: false,
+    dots: true,
+    infinite: true,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000
   });
   $('.product-details__slider--thumb').slick({
     asNavFor: '.product-details__slider--big',
@@ -23,7 +23,6 @@ $(function () {
     fade: true,
     draggable: false
   });
-  // Range
   $('.filter__range').ionRangeSlider({
     type: "double",
     onStart: function (data){
@@ -85,6 +84,23 @@ $(function () {
     $('.product-details__more-item').removeClass('product-details__more-item--active');
     $($(this).attr('href')).addClass('product-details__more-item--active');
   })
+  // Swipper
+  var mySwiper = new Swiper('.related__slider', {
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
+    mousewheel: {
+      sensitivity: 1,
+    },
+    slidesPerView: 4,
+    spaceBetween: 30,
+  });
 });
 // Tabs
 let mixer1 = mixitup('.product__items', {

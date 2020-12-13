@@ -257,6 +257,49 @@
     }
   }
 }
+.related {
+  &__title {
+    position: relative;
+   .swiper-button-prev,
+   .swiper-button-next {
+      position: absolute;
+      z-index: 22222;
+      width: 50px;
+      height: 50px;
+      font-size: 0;
+      border: 2px solid #edf1f4;
+      background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: all .3s;
+      &:hover {
+        border: 2px solid $secondary;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .swiper-button-prev {
+      top: 20px;
+      left: auto;
+      right: 70px;
+      background-image: url(../images/icon/arrow-left.svg);
+    }
+    .swiper-button-next {
+      top: 20px;
+      right: 0;
+      background-image: url(../images/icon/arrow-right.svg);
+    }
+  }
+  &__item {
+    max-width: 270px;
+  }
+  &__slider {
+    position: relative;
+    padding: 15px;
+    margin: 50px -15px 0;
+  }
+}
 .jq-number {
   &__field {
     width: 48px;
