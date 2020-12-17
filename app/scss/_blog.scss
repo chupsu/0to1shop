@@ -1,0 +1,127 @@
+.article {
+  margin-right: 70px;
+  &__wrapper {
+    display: flex;
+    padding: 120px 0 75px;
+  }
+  &__item + &__item {
+    margin-top: 50px;
+  }
+  &__img-box {
+    position: relative;
+    margin-bottom: 35px;
+  }
+  &__img-link {
+    width: 100%;
+    height: 500px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    border: none;
+    background-color: $secondary;
+    padding: 30px 25px;
+    margin-top: -70px;
+    .blog__date::before {
+      content: url(../images/icon/calendar-white.svg);
+    }
+    .blog__author::before {
+      content: url(../images/icon/user-white.svg);
+    }
+  }
+  &__title {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 180px;
+    height: 60px;
+    @extend %Rubik-500;
+    line-height: 12px;
+    font-size: 15px;
+    color: $secondary;
+    border: 1px solid $secondary;
+    padding: 20px;
+    transition: all .5s;
+    &--arrow {
+      font-size: 24px;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $secondary;
+    }
+  }
+}
+.search-form {
+  display: flex;
+  height: 43px;
+  border-radius: 5px;
+  border: 2px solid #edf1f4;
+  &__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+  }
+  &__btn {
+    width: 45px;
+    height: 39px;
+    border: none;
+    border-radius: 3px;
+    background-color: #edf1f4;
+    padding: 10px;
+    transition: all .3s;
+    cursor: pointer;
+    &::after {
+      content: url(../images/icon/search-aside.svg);
+    }
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
+.recent-article {
+  &__item {
+    display: flex;
+    & + & {
+      margin-top: 20px;
+    }
+  }
+  &__img-link {
+    flex: 0 0 70px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__title {
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  &__date {
+    color: #9a9a9a;
+    margin: 0;
+  }
+}
